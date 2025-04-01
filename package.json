@@ -1,0 +1,49 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.2.0",
+    "react-scripts": "^5.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "serialize-javascript": "^6.0.2",
+    "terser-webpack-plugin": "^5.3.11",
+    "web-vitals": "^4.2.4",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "scripts": {
+  "start": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "node server.js",
+  "client": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}
